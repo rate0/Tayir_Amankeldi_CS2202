@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modern AIs Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function calculateScore() {
+			var totalQuestions = 7;
+			var score = 0;
+			var answers = [
+				"correct", // question 1
+				"correct", // question 2
+				"correct", // question 3
+				"correct", // question 4
+				"correct", // question 5
+				"correct", // question 6
+				"correct"  // question 7
+			];
+
+			// iterate over each question and check if the selected answer is correct
+			for (var i = 1; i <= totalQuestions; i++) {
+				var selectedAnswer = document.querySelector('input[name="question' + i + '"]:checked');
+				if (selectedAnswer !== null && selectedAnswer.value === answers[i-1]) {
+					score++;
+				}
+			}
+
+			// display the score on the page
+			document.getElementById("score").textContent = "Your score is " + score + "/" + totalQuestions;
+			document.getElementById("results").style.display = "block";
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<centertext><h1>Modern AIs Catalog</h1></centertext> <br>
+		<centertext><nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="gpt.html">GPT-3</a></li>
+				<li><a href="midjourney.html">MidJourney</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+			</ul>
+		</nav></centertext>
+	</header>
+
+	<main>
+		<section>
+			<h2>Modern AIs Quiz</h2>
+			<p>Test your knowledge of the latest and greatest artificial intelligence technologies, including GPT-3 and MidJourney. Answer the following 7 questions to see how much you really know about these cutting-edge technologies.</p>
+			<form>
+				<ol>
+					<li>
+						<h3>What is GPT-3?</h3>
+						<label><input type="radio" name="question1" value="incorrect">A type of airplane</label><br>
+						<label><input type="radio" name="question1" value="incorrect">A type of robot</label><br>
+						<label><input type="radio" name="question1" value="correct">A language model AI</label><br>
+						<label><input type="radio" name="question1" value="incorrect">A new kind of car</label>
+					</li>
+					<li>
+						<h3>What company developed GPT-3?</h3>
+						<label><input type="radio" name="question2" value="incorrect">Tesla</label><br>
+						<label><input type="radio" name="question2" value="correct">OpenAI</label><br>
+						<label><input type="radio" name="question2" value="incorrect">Google</label><br>
+						<label><input type="radio" name="question2" value="incorrect">Apple</label>
+					</li>
+					<li>
+						<h3>What is the purpose of GPT-3?</h3>
+                        <label><input type="radio" name="question3" value
+
+="incorrect">To clean the house</label><br>
+<label><input type="radio" name="question3" value="incorrect">To fly planes</label><br>
+<label><input type="radio" name="question3" value="correct">To generate human-like language</label><br>
+<label><input type="radio" name="question3" value="incorrect">To cook meals</label>
+</li>
+<li>
+<h3>What is MidJourney?</h3>
+<label><input type="radio" name="question4" value="incorrect">A new video game</label><br>
+<label><input type="radio" name="question4" value="incorrect">A type of food</label><br>
+<label><input type="radio" name="question4" value="correct">A conversational AI</label><br>
+<label><input type="radio" name="question4" value="incorrect">A music streaming service</label>
+</li>
+<li>
+<h3>What is the main purpose of MidJourney?</h3>
+<label><input type="radio" name="question5" value="incorrect">To play games</label><br>
+<label><input type="radio" name="question5" value="correct">To have natural conversations with humans</label><br>
+<label><input type="radio" name="question5" value="incorrect">To cook food</label><br>
+<label><input type="radio" name="question5" value="incorrect">To fly planes</label>
+</li>
+<li>
+<h3>What is the Turing test?</h3>
+<label><input type="radio" name="question6" value="incorrect">A test to measure physical strength</label><br>
+<label><input type="radio" name="question6" value="correct">A test to determine if a machine can exhibit human-like intelligence</label><br>
+<label><input type="radio" name="question6" value="incorrect">A test to see if someone can solve complex math problems</label><br>
+<label><input type="radio" name="question6" value="incorrect">A test to see if someone can run fast</label>
+</li>
+<li>
+<h3>What was the result of the Turing test in 2014?</h3>
+<label><input type="radio" name="question7" value="incorrect">The machine failed to convince the judges it was human</label><br>
+<label><input type="radio" name="question7" value="incorrect">The machine was unable to complete the test</label><br>
+<label><input type="radio" name="question7" value="correct">The machine passed the test for the first time in history</label><br>
+<label><input type="radio" name="question7" value="incorrect">The test was not conducted in 2014</label>
+</li>
+</ol>
+
+<input type="button" value="Submit" onclick="calculateScore()">
+</form>
+</section>
+<section id="results" style="display:none;">
+    <h2>Your Results</h2>
+    <p id="score"></p>
+</section>
+</main>
+
+<footer>
+<p>Created by CS-2202</p>
+</footer>
+</body>
+</html>
