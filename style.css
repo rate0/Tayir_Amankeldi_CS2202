@@ -1,39 +1,27 @@
 /* Global styles */
-
-
-* {
-	box-sizing: border-box;
-}
-
 body {
-	font-family: Arial;
-	font-size: 17px;
-}
-
-.container  {
-	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
 	max-width: 500px;
 	margin: 0 auto;
-}
-
-.container img {vertical-align: middle;}
-
-.container .content {
+  }
+  
+  .container img {
+	vertical-align: middle;
+  }
+  
+  .content {
 	position: absolute;
 	bottom: 0;
-	background: rgb(0, 0, 0); /* Fallback color */
-	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+	background-color: rgba(0, 0, 0, 0.5);
 	color: #f1f1f1;
 	width: 100%;
 	padding: 20px;
-}
-
-.container2 {
-	position: relative;
-	font-family: Arial;
-}
-
-.text-block {
+  }
+  
+  .text-block {
 	position: absolute;
 	top: 20px;
 	right: 20px;
@@ -41,312 +29,71 @@ body {
 	color: white;
 	padding-left: 20px;
 	padding-right: 20px;
-}
-
-
-
-
-body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-}
-
-header {
-	background-color: #c22a2a;
+  }
+  
+  header {
+	background-color: #0b5ed7;
 	color: #fff;
 	padding: 20px;
-}
-
-header h1 {
+  }
+  
+  header h1 {
 	margin: 0;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-}
-
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-nav li {
-	display: inline-block;
+  }
+  
+  nav li {
 	margin-right: 20px;
-}
-
-nav li:last-child {
-	margin-right: 0;
-}
-
-nav a {
+  }
+  
+  nav a {
 	color: #fff;
-	text-decoration: none;
-}
-
-main {
-	max-width: 800px;
+  }
+  
+  main {
 	margin: 20px auto;
 	padding: 0 20px;
-}
-
-section {
+  }
+  
+  section {
 	margin-bottom: 40px;
-}
-
-section h2 {
+  }
+  
+  section h2 {
 	margin-top: 0;
-}
-
-table, th, td {
-	border: 1px solid black;
-	border-collapse: separate;
-	border-color: #c22a2a ;
-	border-width: revert;
+  }
+  
+  table {
+	border: 1px solid #0b5ed7;
+	border-collapse: collapse;
 	padding: 10px;
-}
-
-li {
+  }
+  
+  li {
 	list-style-type: square;
-
-}
-
-centertext
-{
+  }
+  
+  .centertext {
 	text-align: center;
-}
-
-
-footer {
-	background-color: #c22a2a;
+  }
+  
+  footer {
+	background-color: #0b5ed7;
 	color: #fff;
 	text-align: center;
 	padding: 20px;
-}
-
-/* Specific styles for each page */
-/* Home page */
-.home section:first-child {
+  }
+  
+  /* Specific styles for each page */
+  /* Home page */
+  .home section:first-child {
 	font-size: 1.5em;
-}
-
-.home ul {
+  }
+  
+  .home ul {
 	margin-top: 20px;
-}
-.example-image {
+  }
+  img {
     width: 300px;
     height: auto;
 }
-
-
-/* About page */
-.about p {
-	max-width: 600px;
-	margin: 0 auto;
-}
-
-/* GPT-3 page */
-.gpt h3,
-.midjourney h3 {
-	margin-top: 0;
-}
-
-.gpt ul,
-.midjourney ul {
-	margin-top: 20px;
-}
-
-.gpt li,
-.midjourney li {
-	margin-bottom: 10px;
-}
-
-.gpt li:last-child,
-.midjourney li:last-child {
-	margin-bottom: 0;
-}
-
-.gpt p,
-.midjourney p {
-	max-width: 600px;
-	margin: 0 auto;
-}
-/* Global styles */
-
-
-* {
-	box-sizing: border-box;
-}
-
-body {
-	font-family: Arial;
-	font-size: 17px;
-}
-
-.container  {
-	position: relative;
-	max-width: 500px;
-	margin: 0 auto;
-}
-
-.container img {vertical-align: middle;}
-
-.container .content {
-	position: absolute;
-	bottom: 0;
-	background: rgb(0, 0, 0); /* Fallback color */
-	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-	color: #f1f1f1;
-	width: 100%;
-	padding: 20px;
-}
-
-.container2 {
-	position: relative;
-	font-family: Arial;
-}
-
-.text-block {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	background-color: black;
-	color: white;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-
-
-
-body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-}
-
-header {
-	background-color: #c22a2a;
-	color: #fff;
-	padding: 20px;
-}
-
-header h1 {
-	margin: 0;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-}
-
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-nav li {
-	display: inline-block;
-	margin-right: 20px;
-}
-
-nav li:last-child {
-	margin-right: 0;
-}
-
-nav a {
-	color: #fff;
-	text-decoration: none;
-}
-
-main {
-	max-width: 800px;
-	margin: 20px auto;
-	padding: 0 20px;
-}
-
-section {
-	margin-bottom: 40px;
-}
-
-section h2 {
-	margin-top: 0;
-}
-
-table, th, td {
-	border: 1px solid black;
-	border-collapse: separate;
-	border-color: #c22a2a ;
-	border-width: revert;
-	padding: 10px;
-}
-
-li {
-	list-style-type: square;
-
-}
-
-centertext
-{
-	text-align: center;
-}
-
-
-footer {
-	background-color: #c22a2a;
-	color: #fff;
-	text-align: center;
-	padding: 20px;
-}
-
-/* Specific styles for each page */
-/* Home page */
-.home section:first-child {
-	font-size: 1.5em;
-}
-
-.home ul {
-	margin-top: 20px;
-}
-.example-image {
-    width: 300px;
-    height: auto;
-}
-
-
-/* About page */
-.about p {
-	max-width: 600px;
-	margin: 0 auto;
-}
-
-/* GPT-3 page */
-.gpt h3,
-.midjourney h3 {
-	margin-top: 0;
-}
-
-.gpt ul,
-.midjourney ul {
-	margin-top: 20px;
-}
-
-.gpt li,
-.midjourney li {
-	margin-bottom: 10px;
-}
-
-.gpt li:last-child,
-.midjourney li:last-child {
-	margin-bottom: 0;
-}
-
-.gpt p,
-.midjourney p {
-	max-width: 600px;
-	margin: 0 auto;
-}
+  
