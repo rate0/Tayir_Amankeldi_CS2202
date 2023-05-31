@@ -1,153 +1,274 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Modern AIs Catalog</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="icon" type="image/x-icon" href="favicon.jpeg">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
-        <script src="jquery-3.7.0.min.js"></script> 
+<head>
+
+    <title>Modern AIs Catalog</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.jpeg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <script src="jquery-3.7.0.min.js"></script>
 </head>
 <body style="background-color: #00abb3">
-    <header>
-		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3c4048">
-			<a class="navbar-brand" href="#">Modern AIs Catalog</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="gpt.html">GPT-3</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="midjourney.html">MidJourney</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="quiz.html">Quiz</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-
-	<main class="container">
-		<section>
-            <div class="text-center"><h2>Welcome to the Modern AIs Catalog</h2></div>
-            <div class="text-center"><p>Experience the latest and most advanced artificial intelligence technologies that are revolutionizing the
-                way we live and work. Here, you can explore two of the most innovative AIs available today: GPT-3 and MidJourney.</p></div>
-            </section>
-
-            <section>
-                <div class="text-center"><h2>AI Categories</h2></div>
-                <table class="table">
-                <thead>
-                    <tr>
-                        <th colspan="3">Catalog</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Language models</td>
-                        <td>Text-to-image diffusion models</td>
-                        <td>Text-to-video AI generators</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>GPT-4</li>
-                                <li>GPT-3</li>
-                                <li>Bloom</li>
-                                <li>ESMFold</li>
-                                <li>Gato</li>
-                                <li>WuDao 2.0</li>
-                                <li>MT-NLG</li>
-                                <li>LaMDA</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Stable Diffusion</li>
-                                <li>DALL-E 2</li>
-                                <li>DALL-E</li>
-                                <li>DALL-E FLOW</li>
-                                <li>Midjourney</li>
-                                <li>Craiyon</li>
-                                <li>Playground AI</li>
-                                <li>BlueWillow</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>DeepBrain AI</li>
-                                <li>ModelScope</li>
-                                <li>Stable Diffusion Videos</li>
-                                <li>Deforum Stable Diffusion</li>
-                                <li>Make-A-Video</li>
-                                <li>Lumen5</li>
-                                <li>Designs.AI</li>
-                                <li>Synthesia.io</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <br>
-            </section>
-            <section>
-                <div class="text-center"><h2>AI Categories</h2></div>
-                <table class="table">
-                <tbody>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li><a href="gpt.html">GPT-3</a> - This state-of-the-art language processing AI can understand and generate human-like text with remarkable accuracy and fluency. Whether you need help with content creation, language translation, or chatbot development, GPT-3 can do it all.</li>
-                                <li><a href="midjourney.html">MidJourney</a> - Looking to enhance your customer engagement and loyalty? MidJourney's advanced machine learning algorithms can help you analyze customer data and behavior to generate personalized recommendations and content that resonates with your audience. Say goodbye to generic marketing and hello to targeted and effective customer interactions.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            </section>
-            <section class="container">
-                <h2 class="text-center">Try out yourself!</h2>
+    <script>
+        function playButtonClickSound() {
+            var audio = new Audio('sound.mp3');
+            audio.play();
+        }
+    </script>
+    
+<header>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="gpt.html">GPT-3</a>
+        <a href="midjourney.html">MidJourney</a>
+        <a href="quiz.html">Quiz</a>
+    </div>
+</header>
 <br>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-4 text-center">
-                        <a href="https://chat.openai.com/" class="btn btn-primary btn-block" style="background-color: #00abb3">Chatbot</a>
-                    </div>
-                    <div class="col-12 col-md-4 text-center">
-                        <a href="https://stablediffusionweb.com/#demo" class="btn btn-primary btn-block" style="background-color: #00abb3">Text-to-image</a>
-                    </div>
-                    <div class="col-12 col-md-4 text-center">
-                        <a href="https://makeavideo.studio/" class="btn btn-primary btn-block" style="background-color: #00abb3">Text-to-video</a>
-                    </div>
-                </div>
-            </section>
-            <br>
-            <section class="container">
-                <h2 class="text-center">Why Choose Modern AIs?</h2>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-8">
-                        <p>There are numerous benefits to incorporating the latest AI technologies into your business or personal life. Some of the key advantages of GPT-3 and MidJourney include:</p>
-                        <ul>
-                            <li>Increased efficiency and productivity - By automating routine tasks and providing valuable insights and recommendations, these AIs can help you save time and streamline your workflow.</li>
-                            <li>Improved customer engagement and satisfaction - By providing personalized content and recommendations, these AIs can help you build stronger relationships with your audience and enhance customer loyalty.</li>
-                            <li>Cost savings - By reducing the need for human labor and manual processes, these AIs can help you save money and reduce overhead costs.</li>
-                            <li>Competitive advantage - By adopting the latest AI technologies, you can stay ahead of the curve and stand out in a crowded market.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            </main>
-            <footer class="container-fluid">
-                <p>&copy; 2023 Modern AIs Catalog</p>
-            </footer>
+<main class="container">
+    <section>
+        <div class="text-center"><h2>Welcome to the Modern AIs Catalog</h2></div>
+        <div class="text-center"><p>Experience the latest and most advanced artificial intelligence technologies that are revolutionizing the
+            way we live and work. Here, you can explore two of the most innovative AIs available today: GPT-3 and MidJourney.</p></div>
+    </section>
+
+    <section>
+        <div class="text-center"><h2>AI Categories</h2></div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th colspan="3">Catalog</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Language models</td>
+                <td>Text-to-image diffusion models</td>
+                <td>Text-to-video AI generators</td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>GPT-4</li>
+                        <li>GPT-3</li>
+                        <li>Bloom</li>
+                        <li>ESMFold</li>
+                        <li>Gato</li>
+                        <li>WuDao 2.0</li>
+                        <li>MT-NLG</li>
+                        <li>LaMDA</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Stable Diffusion</li>
+                        <li>DALL-E 2</li>
+                        <li>DALL-E</li>
+                        <li>DALL-E FLOW</li>
+                        <li>Midjourney</li>
+                        <li>Craiyon</li>
+                        <li>Playground AI</li>
+                        <li>BlueWillow</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>DeepBrain AI</li>
+                        <li>ModelScope</li>
+                        <li>Stable Diffusion Videos</li>
+                        <li>Deforum Stable Diffusion</li>
+                        <li>Make-A-Video</li>
+                        <li>Lumen5</li>
+                        <li>Designs.AI</li>
+                        <li>Synthesia.io</li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+    </section>
+
+
+    <section>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <div class="text-center  "><h2>AI Categories</h2></div>
+        <div class="line"></div>
+        <button class="accordion"  ><li>GPT-3</li> </button>
+        <div class="panel ">
+             <a href="gpt.html">  GPT-3 </a> - This state-of-the-art language processing AI can understand and generate human-like text with remarkable accuracy and fluency. Whether you need help with content creation, language translation, or chatbot development, GPT-3 can do it all.
+        </div>
+
+        <button class="accordion"><li>MidJourney</li></button>
+        <div class="panel">
+            <a href="midjourney.html">MidJourney</a> - Looking to enhance your customer engagement and loyalty? MidJourney's advanced machine learning algorithms can help you analyze customer data and behavior to generate personalized recommendations and content that resonates with your audience. Say goodbye to generic marketing and hello to targeted and effective customer interactions.
+        </div>
+
+        <button class="accordion"><li>Meta AI</li></button>
+        <div class="panel">
+             <a href="https://makeavideo.studio/">Meta AI</a> - Make-A-Video research builds on the recent progress made in text-to-image generation technology built to enable text-to-video generation. The system uses images with descriptions to learn what the world looks like and how it is often described.
+        </div>
+        <div class="line"></div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+
+
+
+    </section>
+
+    <section class="container">
+        <h2 class="text-center">Try out yourself!</h2>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-4 text-center">
+                <a href="https://chat.openai.com/" class="btn btn-primary btn-block" style="background-color: #00abb3" onclick="playButtonClickSound()">Chatbot</a>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <a href="https://stablediffusionweb.com/#demo" class="btn btn-primary btn-block" style="background-color: #00abb3" onclick="playButtonClickSound()">Text-to-image</a>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <a href="https://makeavideo.studio/" class="btn btn-primary btn-block" style="background-color: #00abb3" onclick="playButtonClickSound()">Text-to-video</a>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="container">
+        <h2 class="text-center">Why Choose Modern AIs?</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <p>There are numerous benefits to incorporating the latest AI technologies into your business or personal life. Some of the key advantages of GPT-3 and MidJourney include:</p>
+                <ul>
+                    <li>Increased efficiency and productivity - By automating routine tasks and providing valuable insights and recommendations, these AIs can help you save time and streamline your workflow.</li>
+                    <li>Improved customer engagement and satisfaction - By providing personalized content and recommendations, these AIs can help you build stronger relationships with your audience and enhance customer loyalty.</li>
+                    <li>Cost savings - By reducing the need for human labor and manual processes, these AIs can help you save money and reduce overhead costs.</li>
+                    <li>Competitive advantage - By adopting the latest AI technologies, you can stay ahead of the curve and stand out in a crowded market.</li>
+                </ul>
+            </div>
+        </div>
+    </section><br>
+
+    <section class="container">
+
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                * {box-sizing: border-box}
+                body {font-family: Verdana, sans-serif; margin:0}
+                .mySlides {display: none}
+                img {vertical-align: middle;}
+
+                /* Slideshow container */
+                .slideshow-container {
+                    max-width: 1000px;
+                    position: relative;
+                    margin: auto;
+                }
+
+                /* Next & previous buttons */
+                .prev, .next {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    width: auto;
+                    padding: 16px;
+                    margin-top: -22px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
+                }
+
+                /* Position the "next button" to the right */
+                .next {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+
+                /* On hover, add a black background color with a little bit see-through */
+                .prev:hover, .next:hover {
+                    background-color: rgba(0,0,0,0.8);
+                }
+
+                /* Caption text */
+                .text {
+                    color: #f2f2f2;
+                    font-size: 15px;
+                    padding: 8px 12px;
+                    position: absolute;
+                    bottom: 8px;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                /* Number text (1/3 etc) */
+                .numbertext {
+                    color: #f2f2f2;
+                    font-size: 12px;
+                    padding: 8px 12px;
+                    position: absolute;
+                    top: 0;
+                }
+
+                /* The dots/bullets/indicators */
+                .dot {
+                    cursor: pointer;
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+
+                .active, .dot:hover {
+                    background-color: #717171;
+                }
+
+                /* Fading animation */
+                .fade {
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                }
+
+                @keyframes fade {
+                    from {opacity: .4}
+                    to {opacity: 1}
+                }
+
+                /* On smaller screens, decrease text size */
+                @media only screen and (max-width: 300px) {
+                    .prev, .next,.text {font-size: 11px}
+                }
+            </style>
+        </head>
+
+</main>
+<footer class="container-fluid">
+    <p>&copy; 2023 Modern AIs Catalog</p>
+</footer>
 </body>
 </html>
